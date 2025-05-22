@@ -8,5 +8,33 @@ namespace ProductManagementSystem.Clases
 {
     internal class ProductManager
     {
+
+        private List<Product> products = new List<Product>();
+
+        public ProductManager() { }
+
+        public void addProdudct(Product producto) 
+        {
+            products.Add(producto);
+        }
+
+        public float calculateTotalPrice(Product product) 
+        {
+            if (product.Category == ProductCategory.Electronica)
+            {
+                return (float)(product.Price * 1.1);
+            }
+            else if (product.Category == ProductCategory.Alimentos)
+            {
+                return (float)(product.Price * 1.05);
+            }
+            else
+            {
+                throw new ArgumentException("La categoría ingresada no es válda");
+            }
+        }
+
+
+
     }
 }

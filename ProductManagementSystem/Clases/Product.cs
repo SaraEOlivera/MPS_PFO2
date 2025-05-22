@@ -15,10 +15,10 @@ namespace ProductManagementSystem
     }
     public class Product
     {
-        private decimal precio;
+        private float precio;
         public int Id { get; set; }
         public string Name { get; set; }
-        public decimal Price
+        public float Price
         {
             get { return precio; }
             set {
