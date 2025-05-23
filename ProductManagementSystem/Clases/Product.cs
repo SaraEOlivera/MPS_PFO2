@@ -11,11 +11,10 @@ namespace ProductManagementSystem
     {
         Electronica,
         Alimentos
-        
     }
     public class Product
     {
-        private float precio;
+        public float precio;
         public int Id { get; set; }
         public string Name { get; set; }
         public float Price

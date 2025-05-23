@@ -9,13 +9,13 @@ namespace ProductManagementSystem.Clases
     internal class ProductManager
     {
 
-        private List<Product> products = new List<Product>();
+        private List<Product> productsList = new List<Product>();
 
         public ProductManager() { }
 
-        public void addProdudct(Product producto) 
+        public void addProdudct(Product newProduct) 
         {
-            products.Add(producto);
+            productsList.Add(newProduct);
         }
 
         public float calculateTotalPrice(Product product) 
@@ -34,7 +34,10 @@ namespace ProductManagementSystem.Clases
             }
         }
 
+        //public string findProductByName(Product product) 
+        //{
 
+        //}
 
     }
 }
