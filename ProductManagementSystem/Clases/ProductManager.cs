@@ -34,10 +34,10 @@ namespace ProductManagementSystem.Clases
             }
         }
 
-        //public string findProductByName(Product product) 
-        //{
-
-        //}
+        public Product findProductByName(string name)
+        {
+            return productsList.Find(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        }
 
     }
 }
